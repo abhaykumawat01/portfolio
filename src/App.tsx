@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,6 +11,7 @@ import './index.css';
 
 function App() {
   return (
+    <BrowserRouter basename='/portfolio'>
     <Router>
       {/* CHANGE THIS: Add or remove pages by modifying Routes */}
       <div className="flex flex-col min-h-screen bg-gray-50">
@@ -28,6 +29,7 @@ function App() {
         <Footer />
       </div>
     </Router>
+    </BrowserRouter>
   );
 }
 
