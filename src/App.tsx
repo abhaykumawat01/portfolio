@@ -12,7 +12,6 @@ import './index.css';
 function App() {
   return (
     <BrowserRouter basename='/portfolio'>
-    <Router>
       {/* CHANGE THIS: Add or remove pages by modifying Routes */}
       <div className="flex flex-col min-h-screen bg-gray-50">
         <Navbar />
@@ -28,7 +27,6 @@ function App() {
         </main>
         <Footer />
       </div>
-    </Router>
     </BrowserRouter>
   );
 }
