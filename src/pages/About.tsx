@@ -49,7 +49,7 @@ const About = () => {
                 <div className="aspect-square rounded-3xl overflow-hidden bg-gradient-to-br from-sky-400 to-orange-400 p-1">
                   <div className="w-full h-full rounded-3xl bg-gray-200 flex items-center justify-center">
                     <img
-                      src="/Public/images/profile-img.png"
+                      src={`${import.meta.env.BASE_URL}images/profile-img.png`}
                       alt="Profile"
                       className="w-full h-full object-cover rounded-3xl"
                     />
@@ -104,7 +104,7 @@ const About = () => {
               {/* CHANGE THIS: Update resume link */}
               <div className="pt-4">
                 <a
-                  href="/Public/pdfs/resume.pdf"
+                  href={`${import.meta.env.BASE_URL}pdfs/resume.pdf`}
                   download
                   className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-sky-500 to-sky-600 text-white font-semibold rounded-xl hover:from-sky-600 hover:to-sky-700 transform hover:scale-105 transition-all duration-300 shadow-lg shadow-sky-500/30"
                 >
