@@ -75,7 +75,7 @@ const Home = () => {
             </Link>
             {/* CHANGE THIS: Update resume link */}
             <a
-              href="/Public/pdfs/resume.pdf"
+              href={`${import.meta.env.BASE_URL}pdfs/resume.pdf`}
               download
               className="group inline-flex items-center justify-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transform hover:scale-105 transition-all duration-300"
             >
