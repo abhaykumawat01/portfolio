@@ -40,7 +40,7 @@ const Contact = () => {
   const socialLinks = [
     { name: 'GitHub', icon: Github, url: 'https://github.com/abhaykumawat01', color: 'hover:bg-gray-800' },
     { name: 'LinkedIn', icon: Linkedin, url: 'https://linkedin.com/in/abhaykumawat01', color: 'hover:bg-blue-600' },
-    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/yourusername', color: 'hover:bg-sky-400' },
+    { name: 'Twitter', icon: Twitter, url: 'https://twitter.com/', color: 'hover:bg-sky-400' },
   ];
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -193,7 +193,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-300"
-                    placeholder="John Doe"
+                    placeholder="abhay kumawat"
                   />
                 </div>
 
@@ -210,7 +210,7 @@ const Contact = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 border border-gray-200 rounded-xl focus:ring-2 focus:ring-sky-500 focus:border-sky-500 transition-all duration-300"
-                    placeholder="john@example.com"
+                    placeholder="abhay@example.com"
                   />
                 </div>
 
