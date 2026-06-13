@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -11,23 +11,20 @@ import './index.css';
 
 function App() {
   return (
-    <BrowserRouter basename='/portfolio'>
-      {/* CHANGE THIS: Add or remove pages by modifying Routes */}
-      <div className="flex flex-col min-h-screen bg-gray-50">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/skills" element={<Skills />} />
-            <Route path="/education" element={<Education />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+    <div className="flex flex-col min-h-screen bg-gray-50">
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
